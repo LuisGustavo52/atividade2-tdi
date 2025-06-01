@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-	
+		<h1>Retorno de Status HTTP</h1>
+		<p>Código de retorno: <b>${statusCode}</b></p> 		
+		<button onclick="window.location.href='/atividade2/'">Início</button>
 	</body>
 </html>
