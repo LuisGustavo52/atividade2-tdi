@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Atividade Servlets HTTP</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body class="index-body">
+		<div class="container">
+			<H1>Use as rotas abaixo para acessar os testes de HTTP</H1>
+			<div class="button-container">
+	            <button onclick="window.location.href='/atividade2/headers'">Exibir Cabeçalhos</button>
+	            <button onclick="window.location.href='/atividade2/request-body'">Exibir Corpo da Requisição</button>
+	            <button onclick="window.location.href='/atividade2/session'">Manipulação de Sessão</button>
+	            <button onclick="window.location.href='/atividade2/methods'">Métodos Suportados</button>
+	        </div>
+		
+		  <!-- Campo para inserir o código HTTP -->
+        <div class="http-status">
+            <label for="statusCode">Digite um código HTTP:</label>
+            <input type="text" id="statusCode" maxlength="3" placeholder="Ex: 404">
+            <button onclick="redirectStatus()">Ir para Status</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectStatus() {
+            let code = parseInt(document.getElementById("statusCode").value.trim());
+            if (Number.isInteger(code)) {
+                window.location.href = `/atividade2/status?code=${code}`;
+            } else {
+                alert("Por favor, insira um código HTTP válido de três números.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+		
+	</body>
+</html>
