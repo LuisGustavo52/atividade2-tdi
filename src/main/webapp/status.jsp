@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<meta charset="UTF-8">
-	<title>Retorno de Status HTTP</title>
-	<link rel="stylesheet" href="css/style.css">
+		<meta charset="UTF-8">
+		<title>Retorno de Status HTTP</title>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 	
